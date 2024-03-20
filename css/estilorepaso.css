@@ -1,0 +1,117 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+     --anchomain: 80%;
+     --ancho100: 100%;
+     --colorprimario: #844484;
+
+ }
+
+ /* ------------ORDENAMIENTO------------- */
+ .dflex {
+     display: flex;
+ }
+
+ .centrar {
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* -------FIN----ORDENAMIENTO------------- */
+
+ #contenedor {
+     min-height: 100vh;
+     /*vh: viewport height - vw:viewport width */
+     width: 100%;
+     background-color: lightgrey;
+     padding: 5px;
+ }
+
+ header {
+     height: 60px;
+     width: 100%;
+     background-color: white;
+     display: flex;
+     /* FLEXBOX */
+     justify-content: space-between;
+     align-items: center;
+
+     & .logo {
+         height: 30px;
+         width: 100px;
+         background-color: #847f44;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+
+         & span:first-child {
+             font-size: 20pt;
+         }
+
+         & span:last-child {
+             color: white;
+         }
+
+     }
+
+     & .botonera {
+         height: 30px;
+
+         & a {
+             text-decoration: none;
+             font-size: 16pt;
+             padding: 5px 15px;
+             background-color: lightblue;
+             border-radius: 6px;
+         }
+
+         & a:hover {
+            box-shadow: 0px 0px 15px -5px rgb(211, 6, 6);
+
+     }
+ }
+
+
+
+
+
+ main {
+     width: var(--anchomain);
+     margin: auto;
+
+ }
+
+ #banner {
+     height: 200px;
+     width: 100%;
+     background-color: var(--colorprimario);
+ }
+
+ #descrip {
+     height: 150px;
+     width: 100%;
+     background-color: rgb(150, 96, 104);
+
+ }
+
+ #articulos {
+     height: 300px;
+     width: 100%;
+     background-color: darkmagenta;
+ }
+
+ #nosotros {
+     height: 150px;
+     width: 100%;
+     background-color: rgba(195, 49, 195, 0.749);
+ }
+
+ footer {
+     height: 50px;
+     width: 100%;
+     background-color: lightblue;
+ }
