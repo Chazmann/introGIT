@@ -73,7 +73,7 @@
             box-shadow: 0px 0px 15px -5px rgb(211, 6, 6);
 
      }
- }
+ }}
 
 
 
@@ -96,7 +96,15 @@
      width: 100%;
      background-color: rgb(150, 96, 104);
 
+     & .ancho50{
+        width: 50%;
+        background-color: yellow;
+        border: dotted 2px red;
+     }
+
  }
+
+
 
  #articulos {
      height: 300px;
